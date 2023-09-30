@@ -1,0 +1,125 @@
+// header
+.header {
+  .header_top {
+    background-color: #120f2d !important;
+    padding: 7px 10px;
+    .social_icons {
+      ul {
+        justify-content: flex-end;
+        li{
+          a{
+            &:hover{
+              color:red;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header_bottom {
+    padding: 20px 0px;
+    .logo {
+      text-align: left;
+      a {
+        font-size: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+    .menu_wr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      .site_menu {
+        ul {
+          li {
+            a {
+              color: #000;
+              font-size: 18px;
+              text-transform: capitalize;
+              padding: 0px 15px;
+              font-weight: 600;
+              transition: 0.4s;
+              &:hover {
+                color: #ff0000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// footer section
+.footer_section {
+  background-color: #120f2d !important;
+  color: #fff;
+  padding-top: 70px;
+  text-align: left;
+  position: relative;
+  background: url("../../assets/images/overlay-top.png") no-repeat top center; 
+  .footer_top {
+    padding: 35px 0px;
+    .footer_site_logo {
+      a {
+        font-size: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+    .news-latter{
+      input[type="text"]{
+        width: 80%;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .footer_middle {
+    padding-bottom: 40px;
+    border-bottom: 1px solid gray;
+    .our-course {
+      ul {
+        flex-direction: column;
+        li{
+          padding:  8px 0px;
+          a{
+            font-size: 17px;
+            text-transform: capitalize;
+            transition: .4s;
+            &:hover{
+              color:red;
+            }
+          }
+        }
+      }
+    }
+    .quick-link {
+      ul {
+        flex-direction: column;
+        li{
+          padding:  8px 0px;
+          a{
+            font-size: 17px;
+            text-transform: capitalize;
+            transition: .4s;
+            &:hover{
+              color:red;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_bottom{
+    padding: 30px 0px 10px 0px;
+    .footer_middle p{
+      display: flex !important;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+}

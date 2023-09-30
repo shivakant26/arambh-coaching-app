@@ -1,0 +1,258 @@
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 !important;
+  padding: 0 !important;
+  li {
+    a {
+      text-decoration: none;
+      padding: 0px 10px;
+      color: #fff;
+      transition: 0.4s;
+    }
+  }
+}
+
+.section-heading{
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 46px;
+}
+
+.breadcamb {
+  font-size: 23px;
+  color: #fff;
+  margin-bottom: 45px;
+}
+// site banner
+
+.banner-section {
+  padding: 90px 0px;
+  background: url("../images/banner.avif");
+  background-size: 100% 100%;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: url("../images/overlay-bottom.png") bottom center no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 85px;
+    left: 0;
+    z-index: 1;
+  }
+  .site-banner {
+    position: relative;
+    z-index: 1;
+    h4 {
+      font-size: 35px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 65px;
+      color: #fff;
+      margin-bottom: 50px;
+    }
+    input[type="text"],
+    select,
+    button {
+      padding: 13px;
+      border: none;
+      outline: none;
+    }
+    select {
+      padding-bottom: 14px;
+    }
+    button {
+      background-color: brown;
+      color: #fff;
+    }
+  }
+  .overlay {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 75, 118, 0.9);
+  }
+}
+
+// about us
+.about-us,
+.why-choose-us {
+  padding: 90px 0px;
+}
+
+.our-courses {
+  padding: 90px 0px;
+  h2{
+    padding: 0px 100px;
+  }
+  .course-card {
+    background-image: url("../images/tech.jpg");
+    position: relative;
+    .course-card-content {
+      color: #fff;
+      position: relative;
+      z-index: 1;
+      padding: 60px 0px 10px 0;
+      h5 {
+        padding: 40px 0px 20px;
+      }
+    }
+    .course-card-footer {
+      border-top: 1px solid gray;
+    }
+    .overlay {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+// why choose us
+.why-choose-us {
+  background-image: url("../images/bg-image.jpg");
+  .why-choose-content{
+    padding: 60px 10px;
+    background-color: #f4f8fe;
+  }
+}
+// offer for student
+.offer-for-student {
+  padding-bottom: 90px;
+  background-image: url("../images/bg-image.jpg");
+  .offer-form {
+    width: 500px;
+    background-color: #fff;
+    margin: 0 auto;
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 12px 12px;
+      background: #ecf4ff;
+      outline: none;
+      border: none;
+    }
+    button {
+      width: 100%;
+      padding: 12px 12px;
+    }
+  }
+}
+
+// meet our instructor
+.meet-our-instructor {
+  padding-bottom: 90px;
+  .sec-heading {
+    margin-bottom: 40px;
+    padding: 0px 100px;
+    font-weight: 600;
+  }
+  .instructor-card-content {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// testimonial
+.testimonial_section {
+  padding-bottom: 90px;
+  background-image: url("../images/bg-image.jpg");
+  .student-remark {
+    position: relative;
+    .slider_btn_group {
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      z-index: 2;
+      .prev-btn,
+      .next-btn {
+        padding: 5px 14px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 26px;
+      }
+    }
+  }
+  .quote {
+    font-size: 32px;
+    margin-bottom: 17px;
+    color: #2879ff;
+  }
+}
+
+// contact -us
+.contactus-section {
+  padding: 90px 0px;
+  .sec-heading {
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  .our-location {
+    background-color: #ecf4ff;
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (max-width: 979px) {
+}
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 649px) {
+  .our-courses .sec-heading {
+    padding: 0px 20px;
+  }
+  .offer-for-student .offer-form {
+    width: 100% !important;
+  }
+  .our-courses {
+    padding: 30px 0px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .offer-for-student .offer-form h2 {
+    padding: 0px 20px;
+}
+  .about-us, .why-choose-us {
+    padding: 30px 0px;
+}
+  .header .header_top .social_icons ul {
+    justify-content: center !important;
+}
+.footer_bottom p{
+  text-align: center !important;
+}
+.meet-our-instructor .row {
+  padding-bottom: 30px;
+  justify-content: center !important;
+}
+}
