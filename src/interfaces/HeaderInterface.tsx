@@ -7,6 +7,11 @@ export interface ISocialIcon {
 
 export interface IMenu {
     slug?:string,
-    menuLabel:string,
+    menuLabel?:string,
     icon?:ReactNode
 }
+
+export interface MenuProps {
+    menuItem: IMenu;
+    index: number;
+  }

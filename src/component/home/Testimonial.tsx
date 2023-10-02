@@ -1,6 +1,6 @@
-import React, {useRef , useState} from 'react';
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import ProfileImage from "../../assets/images/profile.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,10 +8,10 @@ import "swiper/css/pagination";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaAngleLeft, FaAngleRight, FaQuoteLeft } from "react-icons/fa";
 
-const Testimonial: React.FC  = () => {
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
-    const [_, setInit] = useState(false);
+const Testimonial: React.FC = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  const [_, setInit] = useState(false);
   return (
     <div className="testimonial_section">
       <Container>
@@ -33,7 +33,11 @@ const Testimonial: React.FC  = () => {
               <Swiper
                 spaceBetween={10}
                 slidesPerView={1}
-                modules={[Navigation]}
+                modules={[Autoplay, Navigation]}
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                }}
                 navigation={{
                   prevEl: prevRef.current,
                   nextEl: nextRef.current,
@@ -53,10 +57,10 @@ const Testimonial: React.FC  = () => {
                         magna sed stet amet elitr duo lorem
                       </p>
                       <Row>
-                        <Col md={2}>
+                        <Col xs={4} md={2}>
                           <img src={ProfileImage} height="80px" width="80px" />
                         </Col>
-                        <Col md={10} className="text-start">
+                        <Col xs={8} md={10} className="text-start">
                           <h5>Amit Verma</h5>
                           <p>Mathmatics</p>
                         </Col>
@@ -77,10 +81,10 @@ const Testimonial: React.FC  = () => {
                         magna sed stet amet elitr duo lorem
                       </p>
                       <Row>
-                        <Col md={2}>
+                        <Col xs={4} md={2}>
                           <img src={ProfileImage} height="80px" width="80px" />
                         </Col>
-                        <Col md={10} className="text-start">
+                        <Col xs={8} md={10} className="text-start">
                           <h5>Depesh Asati</h5>
                           <p>Computer Course</p>
                         </Col>
@@ -101,10 +105,10 @@ const Testimonial: React.FC  = () => {
                         magna sed stet amet elitr duo lorem
                       </p>
                       <Row>
-                        <Col md={2}>
+                        <Col xs={4} md={2}>
                           <img src={ProfileImage} height="80px" width="80px" />
                         </Col>
-                        <Col md={10} className="text-start">
+                        <Col xs={8} md={10} className="text-start">
                           <h5>Mukesh kumar</h5>
                           <p>Web Development</p>
                         </Col>
@@ -125,10 +129,10 @@ const Testimonial: React.FC  = () => {
                         magna sed stet amet elitr duo lorem
                       </p>
                       <Row>
-                        <Col md={2}>
+                        <Col xs={4} md={2}>
                           <img src={ProfileImage} height="80px" width="80px" />
                         </Col>
-                        <Col md={10} className="text-start">
+                        <Col xs={8} md={10} className="text-start">
                           <h5>Student Name</h5>
                           <p>Course Name</p>
                         </Col>

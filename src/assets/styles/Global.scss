@@ -1,4 +1,3 @@
-
 ul {
   list-style-type: none;
   display: flex;
@@ -15,10 +14,10 @@ ul {
   }
 }
 
-.section-heading{
-    margin-bottom: 40px;
-    font-weight: 600;
-    font-size: 46px;
+.section-heading {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 46px;
 }
 
 .breadcamb {
@@ -26,8 +25,35 @@ ul {
   color: #fff;
   margin-bottom: 45px;
 }
+.mobile-menu {
+  display: none;
+  position: relative;
+  .mobile-menu-sidebar {
+    position: absolute;
+    right: -12px;
+    background: black;
+    z-index: 5;
+    top: 43px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        padding: 8px 10px;
+        a {
+          color: #fff;
+          text-transform: capitalize;
+          &:hover{
+            color: red !important;
+          }
+        }
+      }
+    }
+  }
+}
 // site banner
-
 .banner-section {
   padding: 90px 0px;
   background: url("../images/banner.avif");
@@ -91,7 +117,7 @@ ul {
 
 .our-courses {
   padding: 90px 0px;
-  h2{
+  h2 {
     padding: 0px 100px;
   }
   .course-card {
@@ -124,7 +150,7 @@ ul {
 // why choose us
 .why-choose-us {
   background-image: url("../images/bg-image.jpg");
-  .why-choose-content{
+  .why-choose-content {
     padding: 60px 10px;
     background-color: #f4f8fe;
   }
@@ -161,6 +187,20 @@ ul {
     font-weight: 600;
   }
   .instructor-card-content {
+    .instructor-social-icon{
+      ul{
+        justify-content: center;
+        li{
+          a{
+            color: #2879ff;
+            transition: .4s;
+            &:hover{
+              color: #063f99;
+            }
+          }
+        }
+      }
+    }
     img {
       width: 100%;
     }
@@ -187,6 +227,9 @@ ul {
         font-size: 26px;
       }
     }
+  }
+  .student-card{
+    padding: 0px 18px
   }
   .quote {
     font-size: 32px;
@@ -224,6 +267,32 @@ ul {
 @media only screen and (max-width: 979px) {
 }
 @media only screen and (max-width: 767px) {
+  .header .header_bottom .menu_wr {
+    display: none !important;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .header .header_top .web_info ul {
+    display: flex;
+    justify-content: space-between !important;
+  }
+  .header .header_top .social_icons ul {
+    justify-content: center !important;
+  }
+  .section-heading {
+    font-size: 35px !important;
+    margin: 25px 0px !important;
+}
+.about-us, .why-choose-us .contactus-section{
+  padding: 30px 0px;
+}
+.meet-our-instructor , .testimonial_section , .offer-for-student{
+  padding-bottom: 30px !important;
+}
+.contactus-section .sec-heading {
+  margin: 25px 0px !important;
+}
 }
 
 @media only screen and (max-width: 649px) {
@@ -236,23 +305,36 @@ ul {
   .our-courses {
     padding: 30px 0px;
   }
+  .copyright,.design-by{
+    text-align: center !important;
+  }
 }
 
 @media only screen and (max-width: 479px) {
   .offer-for-student .offer-form h2 {
     padding: 0px 20px;
-}
-  .about-us, .why-choose-us {
+  }
+  .about-us,
+  .why-choose-us {
     padding: 30px 0px;
-}
+  }
   .header .header_top .social_icons ul {
     justify-content: center !important;
+  }
+  .footer_bottom p {
+    text-align: center !important;
+  }
+  .meet-our-instructor .row {
+    padding-bottom: 30px;
+    justify-content: center !important;
+  }
+  .header .header_bottom .logo a {
+    font-size: 23px !important;
+  }
+  .our-courses h2 {
+    padding: 0px 10px;
 }
-.footer_bottom p{
-  text-align: center !important;
-}
-.meet-our-instructor .row {
-  padding-bottom: 30px;
-  justify-content: center !important;
+.banner-section .site-banner h1 {
+  font-size: 49px;
 }
 }

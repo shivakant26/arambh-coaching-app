@@ -1,20 +1,25 @@
 import { Container, Row } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProfileImage from "../../assets/images/profile.jpg";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import UserSocialIcons from "../common/UserSocialIcons";
 
 const Instructor: React.FC = () => {
   return (
     <div className="meet-our-instructor">
       <Container>
         <Row>
-          <h2 className="section-heading text-center">
-            Meet Our Instructors
-          </h2>
+          <h2 className="section-heading text-center">Meet Our Instructors</h2>
           <Row>
             <Swiper
               spaceBetween={10}
               slidesPerView={3}
+              modules={[Autoplay]}
+              loop={true}
+              autoplay={{
+                delay: 2500,
+              }}
               breakpoints={{
                 320: {
                   slidesPerView: 1,
@@ -33,7 +38,9 @@ const Instructor: React.FC = () => {
                     <img src={ProfileImage} alt="profile-image" />
                     <h5>Instructor Name</h5>
                     <p>Designation</p>
-                    social icon here
+                    <div className="instructor-social-icon">
+                      <UserSocialIcons />
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -43,7 +50,9 @@ const Instructor: React.FC = () => {
                     <img src={ProfileImage} alt="profile-image" />
                     <h5>Instructor Name</h5>
                     <p>Designation</p>
-                    social icon here
+                    <div className="instructor-social-icon">
+                      <UserSocialIcons />
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -53,7 +62,9 @@ const Instructor: React.FC = () => {
                     <img src={ProfileImage} alt="profile-image" />
                     <h5>Instructor Name</h5>
                     <p>Designation</p>
-                    social icon here
+                    <div className="instructor-social-icon">
+                      <UserSocialIcons />
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -63,7 +74,9 @@ const Instructor: React.FC = () => {
                     <img src={ProfileImage} alt="profile-image" />
                     <h5>Instructor Name</h5>
                     <p>Designation</p>
-                    social icon here
+                    <div className="instructor-social-icon">
+                      <UserSocialIcons />
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

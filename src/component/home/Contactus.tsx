@@ -24,38 +24,38 @@ const Contactus: React.FC = () => {
               <Row className="mb-5">
                 <Col
                   xm={12}
-                  md={2}
+                  xs={4}
                   className="bg-primary text-white d-flex justify-content-center align-items-center"
                 >
                   <MdLocationPin style={{ fontSize: "35px" }} />
                 </Col>
-                <Col xm={12} md={10} className="text-start">
+                <Col xs={8} md={10} className="text-start">
                   <h4>Our Location</h4>
                   <p>123 Street, New York, USA </p>
                 </Col>
               </Row>
               <Row className="mb-5">
                 <Col
-                  xm={12}
+                  xs={4}
                   md={2}
                   className="bg-danger text-white d-flex justify-content-center align-items-center"
                 >
                   <ImPhone style={{ fontSize: "35px" }} />
                 </Col>
-                <Col xm={12} md={10} className="text-start">
+                <Col xs={8} md={10} className="text-start">
                   <h4>Call Us</h4>
                   <p>+012 345 6789</p>
                 </Col>
               </Row>
               <Row className="mb-5">
                 <Col
-                  xm={12}
+                  xs={4}
                   md={2}
                   className="bg-warning text-white d-flex justify-content-center align-items-center"
                 >
                   <MdMail style={{ fontSize: "35px" }} />
                 </Col>
-                <Col xm={12} md={10} className="text-start">
+                <Col xs={8} md={10} className="text-start">
                   <h4>Email Us</h4>
                   <p>mail@domain.com</p>
                 </Col>

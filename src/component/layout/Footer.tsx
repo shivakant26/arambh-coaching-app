@@ -85,11 +85,11 @@ const Footer : React.FC = () => {
         <div className="footer_bottom">
           <Container>
             <Row>
-              <Col xm={12} md={6}>
-                <p>Copyright © <a href="#">Aarambh Class</a>. All Rights Reserved.</p>
+              <Col xs={12} md={6}>
+                <p className="copyright">Copyright © <a href="#">Aarambh Class</a>. All Rights Reserved.</p>
               </Col>
-              <Col xm={12} md={6} className="text-end">
-                <p>Designed by HTML Codex</p>
+              <Col xs={12} md={6} className="text-end">
+                <p className="design-by">Designed by shivakant</p>
               </Col>
             </Row>
           </Container>
