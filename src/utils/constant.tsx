@@ -48,6 +48,10 @@ export const socialIcon: ISocialIcon[] = [
       slug: "/contact",
       menuLabel: "contact",
     },
+    {
+      slug: "/blog",
+      menuLabel: "Blog",
+    },
   ];
 
 // footer

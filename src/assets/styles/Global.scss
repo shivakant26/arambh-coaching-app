@@ -259,6 +259,29 @@ ul {
   }
 }
 
+// Blog page
+.blog-posts{
+  padding: 90px 0px;
+  .loading-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-search{
+    display: flex;
+    justify-content: end;
+  }
+  .blogs{
+    text-align: left;
+    display: inline-block;
+    width: 45%;
+    padding: 17px;
+    border: 1px solid #e6e6e6;
+    margin: 12px;
+    border-radius: 5px;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
 }
 @media only screen and (max-width: 1023px) {
@@ -307,6 +330,10 @@ ul {
   }
   .copyright,.design-by{
     text-align: center !important;
+  }
+  .blog-posts .blogs{
+    width: 100%;
+    margin: 12px 0px;
   }
 }
 
